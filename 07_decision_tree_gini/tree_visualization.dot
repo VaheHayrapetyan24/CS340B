@@ -1,19 +1,19 @@
 digraph tree {
-    "age 1";
-    "credit_rating 2";
-    "yes 3";
-    "age 4";
-    "no 5";
-    "yes 6";
-    "income 7";
-    "no 8";
-    "yes 9";
-    "age 1" -> "credit_rating 2" [label="['middle_aged' 'senior']"];
-    "age 1" -> "income 7" [label="['youth']"];
-    "credit_rating 2" -> "yes 3" [label="['fair']"];
-    "credit_rating 2" -> "age 4" [label="['excellent']"];
-    "age 4" -> "no 5" [label="['senior']"];
-    "age 4" -> "yes 6" [label="['middle_aged']"];
-    "income 7" -> "no 8" [label="['high' 'medium']"];
-    "income 7" -> "yes 9" [label="['low']"];
+    "age 1 GI:None IG:None";
+    "credit_rating 2 GI:0.32 IG:0.32";
+    "yes 3 GI:0.17 IG:0.32";
+    "age 4 GI:0.17 IG:0.32";
+    "no 5 GI:0.00 IG:1.00";
+    "yes 6 GI:0.00 IG:1.00";
+    "income 7 GI:0.32 IG:0.32";
+    "no 8 GI:0.00 IG:0.81";
+    "yes 9 GI:0.00 IG:0.81";
+    "age 1 GI:None IG:None" -> "credit_rating 2 GI:0.32 IG:0.32" [label="['middle_aged' 'senior']"];
+    "age 1 GI:None IG:None" -> "income 7 GI:0.32 IG:0.32" [label="['youth']"];
+    "credit_rating 2 GI:0.32 IG:0.32" -> "yes 3 GI:0.17 IG:0.32" [label="['fair']"];
+    "credit_rating 2 GI:0.32 IG:0.32" -> "age 4 GI:0.17 IG:0.32" [label="['excellent']"];
+    "age 4 GI:0.17 IG:0.32" -> "no 5 GI:0.00 IG:1.00" [label="['senior']"];
+    "age 4 GI:0.17 IG:0.32" -> "yes 6 GI:0.00 IG:1.00" [label="['middle_aged']"];
+    "income 7 GI:0.32 IG:0.32" -> "no 8 GI:0.00 IG:0.81" [label="['high' 'medium']"];
+    "income 7 GI:0.32 IG:0.32" -> "yes 9 GI:0.00 IG:0.81" [label="['low']"];
 }
